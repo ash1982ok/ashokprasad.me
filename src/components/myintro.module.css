@@ -1,0 +1,36 @@
+.intro {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 50px;
+    line-height: 60px;
+    color: #0a0202;
+    text-shadow: 2px 2px #292523;
+}
+
+
+@media screen and (max-device-width:600px) {
+    .intro {
+        font-size: 45px;
+        font-family: 'Dancing Script', cursive;
+        position: absolute;
+        z-index: 1;
+        margin-top: 50px;
+        margin-left: 50px;
+        line-height: 60px;
+        color: #0a0202;
+        text-shadow: 2px 2px #292523;
+    }
+
+    .my-intro {
+        background: rgba(236, 72, 8, .96);
+        height: 200px;
+        display:none;
+    }
+
+    .my-intro-txt {
+        display: block;
+    }
+}

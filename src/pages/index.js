@@ -1,21 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Menu from "../components/menu"
+import Styles from './index.module.css'
+import myPhoto from "../images/myphoto.jpg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Menu/>
+    <section className={Styles.wrapper}>
+      <div className={Styles.body}>
+        <div className={Styles.myPhotoSection}>
+        <div className={Styles.photo}>
+          <img src={myPhoto} alt="Ashok Kumar"></img>
+        </div>
+        <div className={Styles.infoTxt}>
+          Team Leader experienced in directing the activities of workgroups. Adept
+          at developing strategies, providing training, setting goals, and
+          obtaining team feedback. Excellent interpersonal and communication
+          skills. Big picture focus, communicating goals and vision to succeed.
+          Problem solver, networker, and consensus builder. Proactive Team Member
+          with 12 years of experience in different applications. Committed to
+          maintaining efficiency and excellent quality assurance. Skilled at
+          working with no supervision and knowledgeable about latest Frontend
+          Technologies.
+        </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      </div>
+      <div className={Styles.adv}>
+
+      </div>
+    </section>
   </Layout>
 )
 

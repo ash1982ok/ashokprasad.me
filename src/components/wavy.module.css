@@ -1,0 +1,45 @@
+.wave-container {
+    padding-bottom: 320px;
+    position: relative;
+    /* background-color: #33093a; */
+    /* background:rgb(206, 86, 38);
+    background: linear-gradient(315deg,rgb(206, 86, 38) 0%, rgba(255,255,255,1) 100%); */
+}
+
+@media screen and (max-device-width:600px) {
+    .wave-container {
+        padding-bottom: 100px;
+    }
+}
+@keyframes animateWave2 {
+    50% {
+      transform: scale(1,0.75);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+}
+
+@keyframes animateWave1 {
+    50% {
+      transform: scale(1,0.85);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+}
+.wave2 {
+    display: block;
+    position: absolute;
+    transform-origin: top;
+    fill:#929292;
+    animation: animateWave2 5000ms forwards infinite;
+}
+.wave1 {
+    display: block;
+    fill: #5a5555;
+    position: absolute;
+    color:rgb(206, 86, 38);
+    transform-origin: top;
+    animation: animateWave1 5000ms forwards infinite;
+}

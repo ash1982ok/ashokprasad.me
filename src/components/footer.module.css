@@ -1,0 +1,13 @@
+.wavy {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-device-width:600px) {
+    .wavy {
+        height: 84px;
+    }
+}
