@@ -58,5 +58,11 @@ module.exports = {
       // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
     },
   },
+  {
+    resolve: `gatsby-plugin-google-adsense`,
+    options: {
+      publisherId: `ca-pub-6543210318850862`
+    },
+  },
   ],
 }
